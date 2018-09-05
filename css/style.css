@@ -1,0 +1,26 @@
+/*@import "../libs/bootstrap/scss/bootstrap-reboot.scss"
+@import "../libs/bootstrap/scss/bootstrap-grid.scss"
+@import "../libs/bootstrap/scss/utilities/_sizing.scss"*/
+
+.remove-all-margin {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+/*корректировка верхнего меню*/
+.navbar-nav {
+	margin: auto;
+}
+
+.navbar-brand img {
+	width: 30px;
+	height: 30px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+}
+
+/*корректировка карусели*/
+.carousel-inner {
+	margin: 0;
+}
+
