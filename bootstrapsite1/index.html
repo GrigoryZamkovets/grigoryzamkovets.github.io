@@ -1,97 +1,210 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+              crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <title>bootstrap site</title>
-  </head>
-  <body>
+        <title>bootstrap site</title>
+    </head>
+    <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-			<div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="/" class="navbar-brand"><img src="images/iconsite.png"
+                                                          alt="логотип сайта">Show Business News</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a href="/" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">About Us</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input type="text" class="form-control mr-4" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-lg-0">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
 
-				<div class="navbar-header">
-					<a href="/" class="navbar-brand"><img src="images/iconsite.png" alt="логотип сайта">Show Business News</a>
-	    	</div>
+        <div class="alt-grid">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-md-6 col-xl-3 mb-4">
+                        <div class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/images_carousel/1.jpg" alt="" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/images_carousel/2.jpg" alt="" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/images_carousel/3.jpg" alt="" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/images_carousel/4.jpg" alt="" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/images_carousel/5.jpg" alt="" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/images_carousel/6.jpg" alt="" class="d-block w-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles col-md-6 col-xl-3 mb-2">
+                        <img src="images/images_news/1.jpg" class="img-thumbnail" alt="picture 1">
+                        <h3>Умер актёр из «Терминатора» и племянник Джона Кеннеди Кристофер Лоуфорд</h3>
+                        <p>Актёр и племянник Джона Кеннеди Кристофер Лоуфорд скончался в возрасте 63 лет.
+                            Об этом сообщила в твиттере его двоюродная сестра Керри Кеннеди...
+                            </p>
+                        <a href="#" data-toggle="modal" data-target="#exampleModal1">подробнее &raquo;</a>
+                    </div>
+                    <div class="articles col-md-6 col-xl-3 mb-2">
+                        <img src="images/images_news/2.jpg" class="img-thumbnail" alt="picture 2">
+                        <h3>Пенелопа Крус и Гаэль Гарсия Берналь сыграют в фильме про кубинских шпионов в США</h3>
+                        <p>Пенелопа Крус, Гаэль Гарсия Берналь и Вагнер Моура («Нарко») присоединились к касту фильма
+                            «Осиная сеть» («Wasp Network»), сообщает Deadline...</p>
+                        <a href="#" data-toggle="modal" data-target="#exampleModal2">подробнее &raquo;</a>
+                    </div>
+                    <div class="articles col-md-6 col-xl-3 mb-2">
+                        <img src="images/images_news/3.jpg" class="img-thumbnail" alt="picture 3">
+                        <h3>Крис Мартин и Дакота Джонсон сделали одинаковые татуировки</h3>
+                        <p>Солист группы Coldplay Крис Мартин и звезда «50 оттенков серого» Дакота Джонсон дали новый
+                            повод обсудить их отношения: пара сделала одинаковые татуировки...</p>
+                        <a href="#" data-toggle="modal" data-target="#exampleModal3">подробнее &raquo;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	    	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    		<span class="navbar-toggler-icon"></span>
-	    	</button>
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModal1" aria-hidden="true">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <img src="images/images_news/1.jpg" class="img-thumbnail" alt="picture 1">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center" id="exampleModalLabel1">
+                            Умер актёр из «Терминатора» и племянник Джона Кеннеди Кристофер Лоуфорд
+                        </h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Актёр и племянник Джона Кеннеди Кристофер Лоуфорд скончался в возрасте 63 лет.
+                            Об этом сообщила в твиттере его двоюродная сестра Керри Кеннеди.
+                            По данным TMZ, Джон был в студии йоги, и ему понадобилась срочная медицинская помощь,
+                            после чего он умер. Передают, что смерть наступила по «естественным причинам»,
+                            однако для установления точной причины будет проведено вскрытие.</p>
+                        <p>Лоуфорд был актёром на протяжении двадцати лет и за это время снялся почти в 50 проектах.
+                            На его счету роли в сериалах «Главный госпиталь», «Все мои дети» и «Фрейзер»,
+                            а также в фильмах «Шестой день», «Крутые парни», «Вихрь» и «Терминатор 3: Восстание машин».
+                            Он также работал корреспондентом, читал лекции по психиатрии и активно участвовал в работе
+                            Демократического национального комитета.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModal2" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <img src="images/images_news/2.jpg" class="img-thumbnail" alt="picture 1">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center" id="exampleModalLabel2">
+                            Пенелопа Крус и Гаэль Гарсия Берналь сыграют в фильме про кубинских шпионов в США
+                        </h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Пенелопа Крус, Гаэль Гарсия Берналь и Вагнер Моура («Нарко») присоединились к касту фильма
+                            «Осиная сеть» («Wasp Network»), сообщает Deadline. Они снимутся в шпионской драме
+                            Оливье Ассайаса («Персональный покупатель», «Париж, я люблю тебя») вместе с Педро Паскалем
+                            и Эдгаром Рамиресом.</p>
+                        <p>Сценаристом проекта выступил сам Ассайас. В основу сюжета легла книга Фернандо Мораиса
+                            «Последние солдаты холодной войны» («The Last Soldiers of the Cold War»),
+                            съёмки запланированы на начало 2019 года. Картина расскажет реальную историю кубинских
+                            шпионов, находившихся на территории США в 1990-е годы и раскрывавших ветви местной
+                            террористической сети с разрешения американского правительства.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModal3" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <img src="images/images_news/3.jpg" class="img-thumbnail" alt="picture 1">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center" id="exampleModalLabel3">
+                            Крис Мартин и Дакота Джонсон сделали одинаковые татуировки
+                        </h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Солист группы Coldplay Крис Мартин и звезда «50 оттенков серого» Дакота Джонсон дали новый
+                            повод обсудить их отношения: пара сделала одинаковые татуировки. Музыкант продемонстрировал
+                            небольшую наколку в виде символа бесконечности на прошлой неделе в Лос-Анджелесе,
+                            а актриса показала такое же тату на премьере фильма «Суспирия» на Венецианском
+                            кинофестивале, сообщает «Сплетник».</p>
+                        <p>Дакота и Крис начали стречаться в 2017 году, через некоторое время после официального
+                            развода Мартина с Гвинет Пэлтроу, на которой он был женат более десяти лет.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	    	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    		<ul class="navbar-nav mr-auto">
-	    			<li class="nav-item active">
-	    				<a href="/" class="nav-link">Home</a>
-	    			</li>
-	    			<li class="nav-item">
-	    				<a href="/" class="nav-link">News</a>
-	    			</li>
-	    			<li class="nav-item">
-	    				<a href="/" class="nav-link">About Us</a>
-	    			</li>
-	    		</ul>
-		    	<form class="form-inline my-2 my-lg-0">
-		    		<input type="text" class="form-control mr-4" placeholder="Search" aria-label="Search">
-		    		<button class="btn btn-outline-success my-2 my-lg-0">Search</button>
-		    	</form>
-	    	</div>
-
-    	</div>
-    </nav>	
-
-	  <div class="container-fluid remove-all-margin">
-
-	    <div class="row">
-	    	<div class="col-sm-6 col-lg-3">
-		    	<div class="carousel slide">
-		    		<div class="carousel-inner">
-		    			<div class="carousel-item active">
-		    				<img src="images/images_carousel/1.jpg" alt="" class="d-block w-100">
-		    			</div>
-		    			<div class="carousel-item">
-		    				<img src="images/images_carousel/2.jpg" alt="" class="d-block w-100">
-		    			</div>
-		    			<div class="carousel-item">
-		    				<img src="images/images_carousel/3.jpg" alt="" class="d-block w-100">
-		    			</div>
-		    			<div class="carousel-item">
-		    				<img src="images/images_carousel/4.jpg" alt="" class="d-block w-100">
-		    			</div>
-		    			<div class="carousel-item">
-		    				<img src="images/images_carousel/5.jpg" alt="" class="d-block w-100">
-		    			</div>
-		    			<div class="carousel-item">
-		    				<img src="images/images_carousel/6.jpg" alt="" class="d-block w-100">
-		    			</div>
-		    		</div>
-		    	</div>
-	    	</div>
-	    	<div class="col-sm-6 col-lg-9">
-	    		
-	    	</div>
-	    </div>
 
 
 
-
-
-
-
-
-  	</div>
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="js/javascript.js"></script>
-  </body>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+        <script src="js/javascript.js"></script>
+    </body>
 </html>
