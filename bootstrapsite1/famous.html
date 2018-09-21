@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a href="/" class="navbar-brand"><img src="images/iconsite.png"
+                    <a href="index.html" class="navbar-brand"><img src="images/iconsite.png"
                                                           alt="логотип сайта">Show Business News</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -32,7 +32,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a href="/" class="nav-link">Home</a>
+                            <a href="index.html" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
                             <div class="dropdown">
@@ -41,7 +41,7 @@
                                 <ul class="dropdown-menu">
                                     <li class="dropdown-header">News Category</li>
                                     <li class="dropdown-divider"></li>
-                                    <li class="pl-4"><a class="text-muted" href="news.html">Music</a></li>
+                                    <li class="pl-4"><a class="text-muted" href="music.html">Music</a></li>
                                     <li class="pl-4"><a class="text-muted" href="cinema.html">Cinema</a></li>
                                     <li class="pl-4"><a class="text-muted" href="#">Famous People</a></li>
                                 </ul>
@@ -123,17 +123,17 @@
                     <div class="row">
                         <div class="col-12 col-sm-4 col-lg-12">
                             <div class="billboard my-2 mx-auto">                             
-                                <a href="#" class="text-muted"><img src="../images/images_advertizing/4.jpg" class="rounded img-fluid" alt="billboard 1"> Lorem ipsum dolor sit amet.</a>
+                                <a href="#" class="text-muted" data-toggle="modal" data-target="#exampleModal1"><img src="images/images_advertizing/4.jpg" class="rounded img-fluid" alt="billboard 1"> Lorem ipsum dolor sit amet.</a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-4 col-lg-12">
                             <div class="billboard my-2 mx-auto">                             
-                                <a href="#" class="text-muted"><img src="../images/images_advertizing/5.jpg" class="rounded img-fluid" alt="billboard 2"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, totam?</a>
+                                <a href="#" class="text-muted" data-toggle="modal" data-target="#exampleModal2"><img src="images/images_advertizing/5.jpg" class="rounded img-fluid" alt="billboard 2"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, totam?</a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-4 col-lg-12">
                             <div class="billboard my-2 mx-auto">
-                                <a href="#" class="text-muted"><img src="../images/images_advertizing/6.jpg" class="rounded img-fluid" alt="billboard 3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque accusamus, maxime ducimus ea aliquam, distinctio.</a>
+                                <a href="#" class="text-muted" data-toggle="modal" data-target="#exampleModal3"><img src="images/images_advertizing/6.jpg" class="rounded img-fluid" alt="billboard 3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque accusamus, maxime ducimus ea aliquam, distinctio.</a>
                             </div>
                         </div>         
                     </div> 
@@ -141,7 +141,75 @@
             </div>
         </div>
 
-        
+        <!-- all modal windows -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xs" role="document">
+                <div class="modal-content">
+                    <img src="images/images_advertizing/4.jpg" class="img-thumbnail" alt="advertizing img 4">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-center m-auto" id="exampleModalLabel1">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, rerum.
+                        </h4>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non officia tenetur, voluptatibus aliquid accusamus amet molestias esse, mollitia voluptatum, consequatur a, fugiat at voluptas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ipsum praesentium consequuntur nobis distinctio possimus.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xs" role="document">
+                <div class="modal-content">
+                    <img src="images/images_advertizing/5.jpg" class="img-thumbnail" alt="advertizing img 5">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-center m-auto" id="exampleModalLabel2">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, rerum. 
+                            Lorem ipsum dolor sit amet.
+                        </h4>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non officia tenetur, voluptatibus aliquid accusamus amet molestias esse, mollitia voluptatum, consequatur a, fugiat at voluptas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ipsum praesentium consequuntur nobis distinctio Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla similique animi corporis laborum quaerat neque fuga ipsa deleniti, voluptatem unde.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xs" role="document">
+                <div class="modal-content">
+                    <img src="images/images_advertizing/6.jpg" class="img-thumbnail" alt="advertizing img 6">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-center m-auto" id="exampleModalLabel3">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, rerum. 
+                            Lorem ipsum dolor sit amet.
+                        </h4>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non officia tenetur, voluptatibus aliquid accusamus amet molestias esse, mollitia voluptatum, consequatur a, fugiat at voluptas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ipsum praesentium consequuntur nobis distinctio Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla similique animi corporis laborum quaerat neque fuga ipsa deleniti, voluptatem unde.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 

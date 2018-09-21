@@ -19,3 +19,5 @@ $('.carousel').carousel({
 $('.modal').on('hidden.bs.modal', function(event) {
 	alert('It is a great advertizing!');
 });
+
+

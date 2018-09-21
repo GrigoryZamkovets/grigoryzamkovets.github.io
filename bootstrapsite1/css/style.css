@@ -66,18 +66,18 @@ footer {
 	}
 }
 
-.modal-content .close {
+.modal .modal-content .close {
 	position: absolute;
 	right: 15px;
 	top: 10px;
 	color: white !important;
 }
 
-.modal-content .close:hover {
+.modal .modal-content .close:hover {
 	color: red !important;
 }
 
-.modal-body p {
+.modal .modal-body p {
 	text-indent: 1em;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -142,7 +142,23 @@ span[data-toggle="collapse"] {
 
 span[data-toggle="collapse"]:hover {
 	color: green !important;
+	-webkit-transition: color 1s;
+	-o-transition: color 1s;
 	transition: color 1s;
+}
+
+.modal .close {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	color: white !important;
+}
+
+.modal p {
+	text-indent: 1em;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: justify;
 }
 
 /*article.html*/
@@ -185,6 +201,10 @@ span[data-toggle="collapse"]:hover {
 	height: auto;
 	float: left;
 	margin-right: 2%;
+}
+
+.news-item hr {
+	clear: both;
 }
 
 
