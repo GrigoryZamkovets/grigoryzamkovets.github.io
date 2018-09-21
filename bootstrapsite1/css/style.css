@@ -1,6 +1,9 @@
 /*@import "../libs/bootstrap/scss/bootstrap-reboot.scss"
 @import "../libs/bootstrap/scss/bootstrap-grid.scss"
 @import "../libs/bootstrap/scss/utilities/_sizing.scss"*/
+body {
+	margin-bottom: 0;
+}
 
 .no-margin {
 	margin: 0 !important;
@@ -18,12 +21,17 @@
 	padding-right: 5px;
 }
 
+/*footer*/
+footer {
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+/*index.html*/
 /* корректировка карусели */
 .carousel-inner {
 	margin-bottom:
 }
 
-/*убираем отступы в контейнере с каруселью*/
 .alt-grid [class*="col-"] {
 	padding-left: 0;
 	padding-right: 0;
@@ -40,10 +48,45 @@
 	padding: 0;
 }
 
-/*корректировка главных статей на index.php*/
-.articles {
+/*correct blocks with advertizing cards*/
+.card {
 	padding-left: 15px !important;
 	padding-right: 15px !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+	.card img {
+		max-height: 360px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.card img {
+		max-height: 180px;
+	}
+}
+
+.modal-content .close {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	color: white !important;
+}
+
+.modal-content .close:hover {
+	color: red !important;
+}
+
+.modal-body p {
+	text-indent: 1em;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: justify;
+}
+
+/*корректировка главных статей*/
+.articles {
+	margin-bottom: 5%;
 }
 
 .articles img {
@@ -53,28 +96,100 @@
 
 .articles h3 {
 	font-size: 120%;
-	margin-top: 3%;
-	margin-bottom: 2%;
+	margin-top: 4%;
+	margin-bottom: 3%;
 }
 
 .articles p {
-	margin-bottom: 1%;
+	margin-bottom: 2%;
 }
 
 @media only screen and (max-width: 767px) {
 	.articles h3 {
-		margin-top: 1%;
-		margin-bottom: 1%;
+		margin-top: 3%;
+		margin-bottom: 3%;
 	}
 }
 
-/* корректировка модальных окон к новостям */
-.modal-body p {
+/*contacts.html*/
+.contact-info p {
 	text-indent: 1em;
-	margin-top: 0;
-	margin-bottom: 0;
-	text-align: justify;
 }
+
+.billboard {
+	max-width: 200px;
+}
+
+@media only screen and (max-width: 575px) {
+	.billboard {
+		max-width: 60%;
+		margin: auto;
+	}
+}
+
+.billboard .rounded {
+	display: block;
+	margin: auto;
+	width: 100%;
+	height: auto;
+}
+
+span[data-toggle="collapse"] {
+	font-size: 120%;
+	text-decoration: none !important;
+	cursor: pointer;
+}
+
+span[data-toggle="collapse"]:hover {
+	color: green !important;
+	transition: color 1s;
+}
+
+/*article.html*/
+@media only screen and (min-width: 768px) {
+	#article img {
+		float: left;
+		margin-right: 20px;
+		margin-bottom: 15px;
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	#article img {
+		display: block;
+		width: 70%;
+		margin-left: 15%;
+	}
+	#article h3 {
+		text-align: center;
+		margin: 15px 0;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	#article img {
+		display: block;
+		width: 90%;
+		margin-left: 5%;
+	}
+	#article h3 {
+		text-align: center;
+		margin: 15px 0;
+	}
+}
+
+/*news.html*/
+.news-item img {
+	width: 30%;
+	max-width: 150px;
+	height: auto;
+	float: left;
+	margin-right: 2%;
+}
+
+
+
+
 
 
 

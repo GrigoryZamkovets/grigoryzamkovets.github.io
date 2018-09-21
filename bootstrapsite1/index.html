@@ -11,11 +11,11 @@
               integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
               crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-
         <title>bootstrap site</title>
     </head>
     <body>
 
+        <!-- main header with navigation bar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -30,14 +30,24 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a href="/" class="nav-link">Home</a>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link active">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link">News</a>
+                            <div class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                News <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-header">News Category</li>
+                                    <li class="dropdown-divider"></li>
+                                    <li class="pl-4"><a class="text-muted" href="music.html">Music</a></li>
+                                    <li class="pl-4"><a class="text-muted" href="cinema.html">Cinema</a></li>
+                                    <li class="pl-4"><a class="text-muted" href="famous.html">Famous People</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link">About Us</a>
+                            <a href="contacts.html" class="nav-link">About Us/Contacts</a>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
@@ -48,6 +58,7 @@
             </div>
         </nav>
 
+        <!-- row with advertizing blocks -->
         <div class="alt-grid">
             <div class="container-fluid">
                 <div class="row text-center">
@@ -75,56 +86,50 @@
                             </div>
                         </div>
                     </div>
-                    <div class="articles col-md-6 col-xl-3 mb-2">
-                        <img src="images/images_news/1.jpg" class="img-thumbnail" alt="picture 1">
-                        <h3>Умер актёр из «Терминатора» и племянник Джона Кеннеди Кристофер Лоуфорд</h3>
-                        <p>Актёр и племянник Джона Кеннеди Кристофер Лоуфорд скончался в возрасте 63 лет.
-                            Об этом сообщила в твиттере его двоюродная сестра Керри Кеннеди...
-                            </p>
-                        <a href="#" data-toggle="modal" data-target="#exampleModal1">подробнее &raquo;</a>
+                    <div class="card col-md-6 col-xl-3 mb-4">
+                        <img src="images/images_advertizing/1.jpg" class="card-img-top" alt="advertizing img 1">
+                        <div class="card-body">
+                            <h4 class="card-title">Title 1</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae veritatis explicabo quasi ipsum minima temporibus recusandae blanditiis ipsa assumenda deleniti, nostrum quo veniam, est ratione, consectetur accusamus!</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">подробнее</a>
+                        </div>
                     </div>
-                    <div class="articles col-md-6 col-xl-3 mb-2">
-                        <img src="images/images_news/2.jpg" class="img-thumbnail" alt="picture 2">
-                        <h3>Пенелопа Крус и Гаэль Гарсия Берналь сыграют в фильме про кубинских шпионов в США</h3>
-                        <p>Пенелопа Крус, Гаэль Гарсия Берналь и Вагнер Моура («Нарко») присоединились к касту фильма
-                            «Осиная сеть» («Wasp Network»), сообщает Deadline...</p>
-                        <a href="#" data-toggle="modal" data-target="#exampleModal2">подробнее &raquo;</a>
+                    <div class="card col-md-6 col-xl-3 mb-4">
+                        <img src="images/images_advertizing/2.jpg" class="card-img-top" alt="advertizing img 2">
+                        <div class="card-body">
+                            <h4 class="card-title">Title 2</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae veritatis explicabo quasi ipsum minima temporibus recusandae blanditiis ipsa assumenda deleniti, nostrum quo veniam, est ratione, consectetur accusamus!</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">подробнее</a>
+                        </div>
                     </div>
-                    <div class="articles col-md-6 col-xl-3 mb-2">
-                        <img src="images/images_news/3.jpg" class="img-thumbnail" alt="picture 3">
-                        <h3>Крис Мартин и Дакота Джонсон сделали одинаковые татуировки</h3>
-                        <p>Солист группы Coldplay Крис Мартин и звезда «50 оттенков серого» Дакота Джонсон дали новый
-                            повод обсудить их отношения: пара сделала одинаковые татуировки...</p>
-                        <a href="#" data-toggle="modal" data-target="#exampleModal3">подробнее &raquo;</a>
+                    <div class="card col-md-6 col-xl-3 mb-4">
+                        <img src="images/images_advertizing/3.jpg" class="card-img-top" alt="advertizing img 3">
+                        <div class="card-body">
+                            <h4 class="card-title">Title 1</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae veritatis explicabo quasi ipsum minima temporibus recusandae blanditiis ipsa assumenda deleniti, nostrum quo veniam, est ratione, consectetur accusamus!</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">подробнее</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- all modal windows -->
         <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog"
              aria-labelledby="exampleModal1" aria-hidden="true">
             <div class="modal-dialog modal-md" role="document">
                 <div class="modal-content">
-                    <img src="images/images_news/1.jpg" class="img-thumbnail" alt="picture 1">
+                    <img src="images/images_advertizing/1.jpg" class="img-thumbnail" alt="advertizing img 1">
                     <div class="modal-header">
-                        <h5 class="modal-title text-center" id="exampleModalLabel1">
-                            Умер актёр из «Терминатора» и племянник Джона Кеннеди Кристофер Лоуфорд
-                        </h5>
+                        <h4 class="modal-title m-auto" id="exampleModalLabel1">
+                            Title 1
+                        </h4>
                         <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>Актёр и племянник Джона Кеннеди Кристофер Лоуфорд скончался в возрасте 63 лет.
-                            Об этом сообщила в твиттере его двоюродная сестра Керри Кеннеди.
-                            По данным TMZ, Джон был в студии йоги, и ему понадобилась срочная медицинская помощь,
-                            после чего он умер. Передают, что смерть наступила по «естественным причинам»,
-                            однако для установления точной причины будет проведено вскрытие.</p>
-                        <p>Лоуфорд был актёром на протяжении двадцати лет и за это время снялся почти в 50 проектах.
-                            На его счету роли в сериалах «Главный госпиталь», «Все мои дети» и «Фрейзер»,
-                            а также в фильмах «Шестой день», «Крутые парни», «Вихрь» и «Терминатор 3: Восстание машин».
-                            Он также работал корреспондентом, читал лекции по психиатрии и активно участвовал в работе
-                            Демократического национального комитета.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim accusamus suscipit ea officia nihil veritatis deleniti, assumenda modi, dolore magnam.</p>
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -136,25 +141,17 @@
              aria-labelledby="exampleModal2" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <img src="images/images_news/2.jpg" class="img-thumbnail" alt="picture 1">
+                    <img src="images/images_advertizing/2.jpg" class="img-thumbnail" alt="advertizing img 2">
                     <div class="modal-header">
-                        <h5 class="modal-title text-center" id="exampleModalLabel2">
-                            Пенелопа Крус и Гаэль Гарсия Берналь сыграют в фильме про кубинских шпионов в США
-                        </h5>
+                        <h4 class="modal-title m-auto" id="exampleModalLabel2">
+                            Title 2
+                        </h4>
                         <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>Пенелопа Крус, Гаэль Гарсия Берналь и Вагнер Моура («Нарко») присоединились к касту фильма
-                            «Осиная сеть» («Wasp Network»), сообщает Deadline. Они снимутся в шпионской драме
-                            Оливье Ассайаса («Персональный покупатель», «Париж, я люблю тебя») вместе с Педро Паскалем
-                            и Эдгаром Рамиресом.</p>
-                        <p>Сценаристом проекта выступил сам Ассайас. В основу сюжета легла книга Фернандо Мораиса
-                            «Последние солдаты холодной войны» («The Last Soldiers of the Cold War»),
-                            съёмки запланированы на начало 2019 года. Картина расскажет реальную историю кубинских
-                            шпионов, находившихся на территории США в 1990-е годы и раскрывавших ветви местной
-                            террористической сети с разрешения американского правительства.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ut incidunt architecto maxime debitis reiciendis quibusdam, at, quasi delectus. Quis nulla iusto asperiores voluptate eos dicta similique libero, placeat non.</p>
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -166,23 +163,17 @@
              aria-labelledby="exampleModal3" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <img src="images/images_news/3.jpg" class="img-thumbnail" alt="picture 1">
+                    <img src="images/images_advertizing/3.jpg" class="img-thumbnail" alt="advertizing img 3">
                     <div class="modal-header">
-                        <h5 class="modal-title text-center" id="exampleModalLabel3">
-                            Крис Мартин и Дакота Джонсон сделали одинаковые татуировки
-                        </h5>
+                        <h4 class="modal-title m-auto" id="exampleModalLabel3">
+                            Title 3
+                        </h4>
                         <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>Солист группы Coldplay Крис Мартин и звезда «50 оттенков серого» Дакота Джонсон дали новый
-                            повод обсудить их отношения: пара сделала одинаковые татуировки. Музыкант продемонстрировал
-                            небольшую наколку в виде символа бесконечности на прошлой неделе в Лос-Анджелесе,
-                            а актриса показала такое же тату на премьере фильма «Суспирия» на Венецианском
-                            кинофестивале, сообщает «Сплетник».</p>
-                        <p>Дакота и Крис начали стречаться в 2017 году, через некоторое время после официального
-                            развода Мартина с Гвинет Пэлтроу, на которой он был женат более десяти лет.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non officia tenetur, voluptatibus aliquid accusamus amet molestias esse, mollitia voluptatum, consequatur a, fugiat at voluptas numquam.</p>
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -190,8 +181,72 @@
                 </div>
             </div>
         </div>
+        
+
+        <!-- row with main news -->
+        <div class="container-fluid pt-5" style="background: #eee">
+            <div class="row text-center">
+                <div class="articles col-md-6 col-xl-3">
+                    <img src="images/images_news/1.jpg" class="img-thumbnail" alt="picture 1">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, autem?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci voluptatem architecto cupiditate odit, nobis similique....</p>
+                    <a href="articles/article1.html">подробнее &raquo;</a>
+                </div>
+                <div class="articles col-md-6 col-xl-3">
+                    <img src="images/images_news/2.jpg" class="img-thumbnail" alt="picture 2">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cupiditate blanditiis ut. Dignissimos, maxime, temporibus et non aperiam quo tempore. Nobis eligendi quidem repellat adipisci....</p>
+                    <a href="articles/article2.html">подробнее &raquo;</a>
+                </div>
+                <div class="articles col-md-6 col-xl-3">
+                    <img src="images/images_news/3.jpg" class="img-thumbnail" alt="picture 3">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos odit natus eius, nulla eligendi veniam odio ratione distinctio placeat repellat. Quisquam, vel!...</p>
+                    <a href="articles/article3.html">подробнее &raquo;</a>
+                </div>
+                <div class="articles col-md-6 col-xl-3">
+                    <img src="images/images_news/4.jpg" class="img-thumbnail" alt="picture 3">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, expedita.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, velit, impedit! Doloribus error voluptatem veniam dolores quae similique, provident et blanditiis nemo tempore vitae assumenda suscipit magnam quia repellat voluptatibus?...</p>
+                    <a href="articles/article4.html">подробнее &raquo;</a>
+                </div>
+            </div>
+        </div>
 
 
+        <!-- row with video -->
+        <div class="container-fluid pt-4">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="embed-responsive embed-responsive-16by9 ">
+                        <iframe src="https://www.youtube.com/embed/-wzPffxvtLc" class="embed-responsive-item" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/arb9oEILvWY" class="embed-responsive-item" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/Bcxnj2M1QJI" class="embed-responsive-item" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        
+
+
+
+        <footer class="footer py-4">
+            <div class="container-fluid">
+                <span class="text-muted">&copy; Все права защищены 2018</span>
+            </div>
+        </footer>
 
 
         <!-- Optional JavaScript -->

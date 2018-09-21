@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+              crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>bootstrap site</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script>
+            $(document).ready (function() {
+                $('[data-toggle="tooltip"]').tooltip();          
+
+                // работа кнопки "отправить"
+                $('#send').click (function() {
+                    $('#name').removeClass('is-invalid');
+                    $('#email').removeClass('is-invalid');
+                    $('#subject').removeClass('is-invalid');
+                    $('#message').removeClass('is-invalid');
+                    var name = $('#name').val();
+                    var email = $('#email').val();
+                    var subject = $('#subject').val();
+                    var message = $('#message').val();
+                    var error = false;
+
+                    if (name == "") {
+                        $('#name').addClass('is-invalid');
+                        $('#name').val('enter your name!');
+
+                        error = true;
+                        return false;
+                    }
+                    if(email.split('@').length == 1 || email.split('.').length == 1) {
+                        $('#email').addClass('is-invalid');
+                        $('#email').val('enter correct email!');
+
+                        error = true;
+                        return false;
+                    }
+                    if(subject.length == 0) {
+                        $('#subject').addClass('is-invalid');
+                        $('#subject').val('enter subject of the email!');
+
+                        error = true;
+                        return false;
+                    }
+                    if(message.length == 0) {
+                        $('#message').addClass('is-invalid');
+                        $('#message').val('enter your message!');
+
+                        error = true;
+                        return false;
+                    }
+
+                    if (!error) {
+                        $.ajax({
+                            url: 'feedback.php',
+                            type: 'POST',
+                            cache: false,
+                            data: {'name': name, 'email': email, 'subject': subject, 'message': message},
+                            dataType: 'html',
+                            beforeSend: function() {
+                                
+                            },
+                            success: function(data) {
+                                
+                            }    
+                        });
+                    }
+
+                });
+            });
+        </script>
+    </head>
+    <body>
+
+        <!-- main header with navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="/" class="navbar-brand"><img src="images/iconsite.png"
+                                                          alt="логотип сайта">Show Business News</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                News <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-header">News Category</li>
+                                    <li class="dropdown-divider"></li>
+                                    <li class="pl-4"><a class="text-muted" href="music.html">Music</a></li>
+                                    <li class="pl-4"><a class="text-muted" href="cinema.html">Cinema</a></li>
+                                    <li class="pl-4"><a class="text-muted" href="famous.html">Famous People</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacts.html" class="nav-link active">About Us/Contacts</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input type="text" class="form-control mr-4" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-lg-0">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- contact form -->
+        <div class="container-fluid my-4">
+            <div class="row">
+                <div class="contact-info col-sm-6 col-md-9">
+                    <h5 class="text-muted my-4 text-center">Коммуникационный холдинг ShowBusinessNews</h5>
+                    <p>Информационное агентство ShowBusinessNews с 1993 года создает и развивает информационное пространство для профессионалов индустрии культуры и развлечений, шоу-бизнеса и СМИ. 
+                    Более 20 лет наши подписчики ежедневно пользуются самой полной в России и Восточной Европе ежедневной Лентой новостей культуры и шоу-бизнеса.</p>
+                    <p>Уже два десятилетия мы выпускаем Главную книгу индустрии развлечений и культуры - Ежегодник ShowBusinessNews.</p>
+                    <p>База контактов ShowBusinessNews - самая полная информационная система индустрии культуры и развлечений в России и Восточной Европе (около 50 000 контактов).
+                    За эти годы мы организовали более тысячи PR-кампаний и промо-акций, подготовили сотни маркетинговых исследований, аналитических докладов, бизнес-семинаров и лекций.
+                    Свидетельство о регистрации электронного СМИ: Эл №77-8668 от 11.03.2004 г., выдано Роспечатью.</p>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 text-center my-4">
+                            <span class="text-muted" data-toggle="collapse" data-target="#hide-block">Блок для связи с нашим сайтом</span>
+                            <div class="collapse" id="hide-block">
+                                <form action="" role="form">
+                                    
+                                    <div class="form-group pt-4">
+                                        <input type="text" class="form-control" id="name" placeholder="your nickname" data-toggle="tooltip" title="введите ваше имя!" data-placement="top">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email" placeholder="your email" data-toggle="tooltip" title="введите корректно ваш электронный адрес!" data-placement="top">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="subject" placeholder="subject" data-toggle="tooltip" title="введите тему вашего письма!" data-placement="top">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="message" placeholder="message" rows="5" style="resize: none;" data-toggle="tooltip" title="введите содержание вашего письма!" data-placement="top"></textarea>
+                                    </div>
+                                    <button type="button" id="send" class="btn btn-success btn-sm">send message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="billboard my-2 mx-auto">                             
+                                <a href="#" class="text-muted"><img src="../images/images_advertizing/4.jpg" class="rounded img-fluid" alt="billboard 1"> Lorem ipsum dolor sit amet.</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="billboard my-2 mx-auto">                             
+                                <a href="#" class="text-muted"><img src="../images/images_advertizing/5.jpg" class="rounded img-fluid" alt="billboard 2"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, totam?</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="billboard my-2 mx-auto">
+                                <a href="#" class="text-muted"><img src="../images/images_advertizing/6.jpg" class="rounded img-fluid" alt="billboard 3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque accusamus, maxime ducimus ea aliquam, distinctio.</a>
+                            </div>
+                        </div>         
+                    </div> 
+                </div>
+            </div>
+        </div>
+        
+
+
+
+
+        
+
+
+
+        <footer class="footer py-4">
+            <div class="container-fluid">
+                <span class="text-muted">&copy; Все права защищены 2018</span>
+            </div>
+        </footer>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+        <script src="js/javascript.js"></script>
+    </body>
+</html>
